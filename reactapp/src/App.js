@@ -1,3 +1,4 @@
+// we need to interact with abi of the contract as bytecode is not easy to interact
 import DropBox from "./artifacts/contracts/DropBox.sol/DropBox.json"
 import {useState,useEffect} from "react"
 import {ethers} from "ethers"
@@ -35,7 +36,7 @@ const [modalOpen , setModalOpen] = useState(false);
 
       const contract = new ethers.Contract(
         contractAddress,
-        Upload.abi,
+        DropBox.abi,
         signer
       );
       //console.log(contract);
@@ -85,6 +86,7 @@ const [modalOpen , setModalOpen] = useState(false);
         <p style={{ color: "white" }}>
           Account : {account ? account : "Not connected"}
         </p>
+
         <Upload
           account={account}
           provider={provider}
