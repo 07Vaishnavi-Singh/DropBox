@@ -16,8 +16,20 @@ const handleSubmit=()=>{
 
 
 export default function Upload() {
-  return (
 
+    const [file, setfile] = useState(null)
+    const [fileName, setFileName] = useState("No image selected")
+
+
+
+
+
+
+
+
+
+
+  return (
 
 
 
@@ -30,7 +42,7 @@ export default function Upload() {
 
 
 
-<form className="form" onSubmit={handleSubmit}>
+<form className="form" onSubmit={handleSubmit}> 
         <label htmlFor="file-upload" className="choose">
           Choose Image
         </label>
