@@ -95,7 +95,7 @@ const [modalOpen , setModalOpen] = useState(false);
         </p>
 
         <div class="d-grid gap-2 d-md-block" >
-  <button onClick={loadProvider} >Connect Wallet</button>
+  <button >Connect Wallet</button>
 </div>
         <Upload
           account={account}
@@ -106,13 +106,7 @@ const [modalOpen , setModalOpen] = useState(false);
       </div>
     
     
-    
-    
-    
-    
-    
-    
-    
+
     </>
   );
 }
