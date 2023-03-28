@@ -10,6 +10,25 @@ import Modal from "./components/Modal"
 
 import './App.css';
 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function App() {
 
 const [account , setAccount] = useState("");
